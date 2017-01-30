@@ -4,14 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="styles.css" rel="stylesheet">
+		<link href="media-480px.css" rel="stylesheet">
+		<link href="media-780px.css" rel="stylesheet">
 		<title>Jie Huang</title>
-		<style>
-			@media all and (max-width: 480px) {
-				main.main-info{
-					display: none;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<header class="side-nav">
@@ -20,12 +15,12 @@
 				<ul class="nav-list">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">RESUME</a></li>
+					<li><a href="resume.html">RESUME</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<main class="main-info">
+		<main class="main-info clear">
 			<p id="name">Jie Huang</p>
 			<ul id="description-list">
 				<li>Designer</li>
@@ -33,6 +28,25 @@
 				<li>Coder</li>
 			</ul>
 		</main>
+
+		<div class="main-info-480px">
+			<header>
+				<a href="index.html"></a>
+			</header>
+
+			<div class="contents-480px">
+				<h2>Jie Huang</h2>
+				<p>Programmer</p>
+				<nav>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="#">Portfolio</a></li>
+				</nav>
+			</div>
+
+			<footer class="footer-480px">
+				<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>
+			</footer>
+		</div>
 
 		<footer class="footer-info clear">
 			<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>

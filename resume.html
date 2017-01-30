@@ -1,79 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="resume-styles.css" rel="stylesheet">
 		<title>Resume</title>
-
-
-		<!--
-			
-
-
-		-->
-
-
-
-
 	</head>
 	<body>
-		<header>
-			<div class="">
-				<a href="index.html">logo</a>
-			</div>
+		<aside class="side-nav">
+			<a href="index.html" id="logo-150px"></a>
+			<nav>
+				<ul class="nav-list">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+				</ul>
+			</nav>
+		</aside>
 
-			<div class="">
-				<div class="">
-					Jie Huang
-				</div>
-				<div class="">
-					contact info
-					<div class="info-address">
-						<p>
-							1093 Matthew Street, North Brunswick, NJ 08902
-						</p>
-					</div>
+		<main id="resume" class="clear">
+			<header class="user-info">
+				<a href="resume.html"><img src="#" alt="My picture"></a>
+				<div class="name">Jie Huang</div>
+				<div class="contact-info">Contact Info</div>
+			</header>
 
-					<div class="info-phone-num">
-						<p>
-							732-829-5661
-						</p>
-					</div>
+			<hr id="unique-hr">
 
-					<div class="info-email">
-						<p>
-							Nattime@gmail.com
-						</p>
-					</div>
-				</div>
-			</div>
-		</header>
+			<section class="summary">
+				<h2>Summary</h2>
+				<p>this is a summary</p>
+			</section>
 
-		<div class="container">
-			<div class="summary">
-				summary
-				<p>
-					this is a summary
-				</p>
+			<hr>
 
-			</div>
-
-			<div class="">
-				skills
-
-				<ul class="programming-languages">
+			<section class="skills">
+				<h2>Skills</h2>
+				<hr>
+				<h3>Programming Languages</h3>
+				<ul>
 					<li>C++</li>
 					<li>Java</li>
 					<li>HTML</li>
 					<li>CSS</li>
 				</ul>
+			</section>
 
+			<hr>
 
-			</div>
-
-
-			<div class="">
-				work / experience
-
+			<section class="work-experiences">
+				<h2>Work / Experiences</h2>
 				<ul>
 					<li>
 						Rutgers Computer Lab: Computer Lab Assistant
@@ -87,34 +63,39 @@
 						Rutgers Chess Club: Member—taught new members or those interested how to play the game of chess. Had friendly competition among members and to teach logics and improve thinking skills. Competed against schools such as Princeton in friendly matches and competed in local tournaments, (2010-2011).
 					</li>
 				</ul>
-			</div>
+			</section>
 
-			<div class="">
-				projects / portfolio
-				c++ projects
+			<hr>
 
+			<section class="projects-portfolio">
+				<h2>Projects / Portfolio</h2>
+
+				<hr>
+
+				<h3>C++ Projects</h3>
 				<ul>
-
+					<li></li>
 				</ul>
 
-				webpages
+				<h3>Webpages</h3>
 				<ul>
 					<li>ying photography</li>
 					<li>jiehuang</li>
 				</ul>
-			</div>
+			</section>
 
+			<hr>
 
-			<div class="">
-				education
-				<p>
-					Rutgers University
-				</p>
-			</div>
-		</div>
+			<section class="education">
+				<h2>Education</h2>
+				<ul>
+					<li>Rutgers University</li>
+				</ul>
+			</section>
+		</main>
 
-		<footer>
-
+		<footer class="footer-info clear">
+			<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>
 		</footer>
 	</body>
 </html>

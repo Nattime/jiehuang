@@ -1,4 +1,6 @@
-@resume.css
+title{
+	display: none;
+}
 
 /* ------------------- general css ------------------- */
 *{
@@ -46,8 +48,7 @@ body{
 /* ------------------ side panels ------------------ */
 aside.side-nav{
 	background-color: rgba(12, 12, 12, .3);
-	width: 152px;
-	height: 290px;
+	width: 100px;
 	margin-top: 20px;
 	margin-left: 20px;
 	padding: 0;
@@ -57,30 +58,30 @@ aside.side-nav{
 aside a#logo-150px{
 	float: left;
 	padding: 0px;
-	margin: 2px 1px 2px 1px;
-	width: 150px;
-	height: 150px;
+	margin: 0;
+	width: 100px;
+	height: 100px;
 	background-image: url("jiehuang-logo-150x150-red.png");
 }
 
 aside nav{
 	float: left;
-	width: 150px;
-	height: 135px;
-	margin: 0px 1px 1px 1px;
+	width: 100px;
+	height: auto;
+	margin: 0px 1px 1px 0;
 	padding: 0;
 }
 
 aside nav ul.nav-list{
-	width: 150px;
-	height: 135px;
+	width: 100px;
+	height: auto;
 	padding: 0;
 	margin: 0;
 }
 
 aside nav ul.nav-list li{
 	list-style: none;
-	width: 150px;
+	width: 100px;
 	height: 45px;
 	margin: 0;
 	padding: 0;
@@ -93,9 +94,9 @@ aside nav ul.nav-list li a{
 	text-align: center;
 	display: block;
 	color: white;
-	width: 150px;
+	width: 100px;
 	height: 35px;
-	margin: 0;
+	margin: 5px 0;
 	padding: 5px 0 0 0;
 }
 
@@ -184,6 +185,7 @@ footer.footer-info p#copyright-info{
 }
 
 footer.footer-info p#copyright-info span#genitx{
+	display: inline;
 	color: darkred;
 }
 

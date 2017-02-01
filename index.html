@@ -3,53 +3,63 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css-reset.css" rel="stylesheet">
 		<link href="styles.css" rel="stylesheet">
+	<!--
 		<link href="media-480px.css" rel="stylesheet">
 		<link href="media-780px.css" rel="stylesheet">
+	-->
 		<title>Jie Huang</title>
 	</head>
 	<body>
-		<header class="side-nav">
-			<a href="index.html" id="logo-150px"></a>
-			<nav>
-				<ul class="nav-list">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="resume.html">RESUME</a></li>
-				</ul>
-			</nav>
-		</header>
 
-		<main class="main-info clear">
-			<p id="name">Jie Huang</p>
-			<ul id="description-list">
-				<li>Designer</li>
-				<li>Programmer</li>
-				<li>Coder</li>
-			</ul>
-		</main>
-
-		<div class="main-info-480px">
-			<header>
-				<a href="index.html"></a>
-			</header>
-
-			<div class="contents-480px">
-				<h2>Jie Huang</h2>
-				<p>Programmer</p>
+		<div class="left-column">
+			<header class="side-nav">
+				<a href="index.html" class="logo-150px"></a>
 				<nav>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="#">Portfolio</a></li>
+					<ul class="nav-list">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="resume.html">RESUME</a></li>
+					</ul>
 				</nav>
-			</div>
+			</header>
+		</div>
 
-			<footer class="footer-480px">
-				<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>
-			</footer>
+		<div class="main-column">
+			<main class="main-info">
+				<p class="name">Jie Huang</p>
+				<ul class="description-list">
+					<li>Designer</li>
+					<li>Programmer</li>
+					<li>Coder</li>
+				</ul>
+			</main>
+
+<!--
+			<div class="main-info-480px">
+				<header>
+					<a href="index.html"></a>
+				</header>
+
+				<div class="contents-480px">
+					<h2>Jie Huang</h2>
+					<p>Programmer</p>
+					<nav>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="#">Portfolio</a></li>
+					</nav>
+				</div>
+
+				<footer class="footer-480px">
+					<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>
+				</footer>
+			</div>
+-->
 		</div>
 
 		<footer class="footer-info clear">
-			<p id="copyright-info">Copyright &copy 2017. Designed by <span id="genitx">Genitx</span>.</p>
+			<p class="copyright-info">Copyright &copy 2017. Designed by <span class="genitx">Genitx</span>.</p>
 		</footer>
 	</body>
 </html>

@@ -1,204 +1,176 @@
+/* ------------------- general css ------------------- */
+*{
+	display: block;
+}
 
+html, body{
+	height: 100%;
+	width: 100%;
+}
 
-@media all and (min-width: 781px){
-	title{
-		display: none;
-	}
+.left-column, .main-column{
+	height: 95%;
+}
 
-	/* ------------------- general css ------------------- */
-	*{
-		margin: 0;
-		padding: 0;
-		display: block;
-	}
+title{
+	display: none;
+}
 
-	html, body{
-		margin: 0;
-		padding: 0;
-	}
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
 
-	html{
-		height: auto;
-		width: auto;
-		box-sizing: border-box;
-		-ms-text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
-	}
-
-	body{
-	    height: auto;
-		width: auto;
-		position: relative;
-	}
-
-	.clear{
-		clear: both;
-	}
-
-
-
-
-	/* ------------------ background ------------------ */
-	body{
-		background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .25)), url('landscape-img-1200x687-bw.jpg');
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-
-
-
-	/* ------------------ side panels ------------------ */
-	header.side-nav{
-		background-color: rgba(12, 12, 12, .3);
-		width: 152px;
-		height: 290px;
-		margin-top: 20px;
-		margin-left: 20px;
-		padding: 0;
-		position: absolute;
-	}
-
-	header a#logo-150px{
-		float: left;
-		padding: 0px;
-		margin: 2px 1px 2px 1px;
-		width: 150px;
-		height: 150px;
-		background-image: url("jiehuang-logo-150x150-red.png");
-	}
-
-	header nav{
-		float: left;
-		width: 150px;
-		height: 135px;
-		margin: 0px 1px 1px 1px;
-		padding: 0;
-	}
-
-	header nav ul.nav-list{
-		width: 150px;
-		height: 135px;
-		padding: 0;
-		margin: 0;
-	}
-
-	header nav ul.nav-list li{
-		list-style: none;
-		width: 150px;
-		height: 45px;
-		margin: 0;
-		padding: 0;
-	}
-
-	header nav ul.nav-list li a{
-		background-color: rgba(12, 12, 12, .1);
-		text-decoration: none;
-		font-size: 1.6em;
-		text-align: center;
-		display: block;
-		color: white;
-		width: 150px;
-		height: 35px;
-		margin: 0;
-		padding: 5px 0 0 0;
-	}
-
-	header nav ul.nav-list li a:hover{
-		background-color: rgba(12, 12, 12, .5);
-		color: green;
-	}
+.clear{
+	clear: both;
+}
 
 
 
 
 
-	/* ------------------ main contents ------------------ */
-	main.main-info{
-		width: 400px;
-		height: 150px;
-		position: relative;
-		top: 250px;
-		background-color: rgba(12, 12, 12, .45);
-		margin: auto auto 0 auto;
-		padding: 2px 1px 1px 1px;
-	}
-
-	main.main-info p#name{
-		margin: 0;
-		padding: 0;
-		width: 398px;
-		height: 108px;
-		text-align: center;
-		font-size: 5.5em;
-		color: rgba(184, 15, 12, 1);
-	}
-
-	main.main-info ul#description-list{
-		border-top: 1px dashed red;
-		width: 398px;
-		height: 35px;
-		margin: 0 1px 0 1px;
-		padding: 4px 0 0 0;
-	}
-
-	main.main-info ul#description-list li{
-		float: left;
-		display: block;
-		width: 132px;
-		height: 38px;
-		margin-left: 1px;
-		text-align: center;
-		font-size: 1.5em;
-		color: gainsboro;
-	}
-
-	main.main-info ul#description-list li:first-child{
-		list-style: none;
-		margin-left: 0;
-	}
+/* ------------------ background ------------------ */
+body{
+	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .25)), url('landscape-img-1200x687-bw.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 
 
 
 
-	/* ------------------ footer info ------------------ */
-	footer.footer-info{
-		width: 100%;
-		height: 30px;
-		position: fixed;
-		bottom: 0;
-		padding: 0;
-		background-color: rgba(12, 12, 12, .25);
-	}
+/* ------------------ columns ------------------ */
+.left-column{
+	width: 20%;
+	float: left;
+}
 
-	footer.footer-info p#copyright-info{
-		text-align: center;
-		font-size: 12px;
-		height: 14px;
-		margin: 6px 0;
-		padding: 2px 0;
-	}
-
-	footer.footer-info p#copyright-info span#genitx{
-		color: darkred;
-		display: inline;
-	}
-
-	footer.footer-info p#copyright-info span#genitx:hover{
-		color: white;
-	}
+.main-column{
+	width: 80%;
+	float: left;
+}
 
 
 
-	/* ------------------- 480px screen or smaller ------------------- */
-	@media all and (min-width: 481px) {
 
-		div.main-info-480px{
-			display: none;
-		}
 
-	}
+/* ------------------ side panels ------------------ */
+header.side-nav{
+	background-color: rgba(12, 12, 12, .3);
+	padding-top: 2%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+
+header a.logo-150px{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	background-image: url("jiehuang-logo-150x150-red.png");
+}
+
+header nav{
+	width: 100%;
+	height: auto;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header nav ul.nav-list{
+	width: 100%;
+}
+
+header nav ul.nav-list li{
+	list-style: none;
+	width: 100%;
+}
+
+header nav ul.nav-list li a{
+	display: block;
+	background-color: rgba(12, 12, 12, .1);
+	text-decoration: none;
+	font-size: 1.6em;
+	text-align: center;
+	color: white;
+	width: 100%;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	transition: background-color .5s;
+	transition: color .5s;
+}
+
+header nav ul.nav-list li a:hover{
+	background-color: rgba(12, 12, 12, .5);
+	color: green;
+}
+
+
+
+
+
+/* ------------------ main contents ------------------ */
+main.main-info{
+	width: 60%;
+	margin-top: 23%;
+	margin-left: 10%;
+	background-color: rgba(12, 12, 12, .45);
+	overflow: hidden;
+}
+
+main.main-info p.name{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 5.5rem;
+	color: rgba(184, 15, 12, 1);
+}
+
+main.main-info ul.description-list{
+	border-top: .1em dashed red;
+	width: 100%;
+}
+
+main.main-info ul.description-list li{
+	float: left;
+	width: 33.33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 1.5em;
+	color: gainsboro;
+}
+
+
+
+
+
+/* ------------------ footer info ------------------ */
+footer.footer-info{
+	width: 100%;
+	height: 5%;
+	background-color: rgba(12, 12, 12, .25);
+}
+
+footer.footer-info p.copyright-info{
+	padding-top: 1%;
+	font-size: .7em;
+	text-align: center;
+}
+
+span.genitx{
+	color: darkred;
+	display: inline;
+}
+
+span.genitx:hover{
+	color: white;
 }

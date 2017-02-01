@@ -1,8 +1,8 @@
+/* ------------------- general css ------------------- */
 title{
 	display: none;
 }
 
-/* ------------------- general css ------------------- */
 *{
 	margin: 0;
 	padding: 0;
@@ -26,6 +26,13 @@ body{
     width: auto;
 	height: auto;
 	position: relative;
+}
+
+hr:nth-of-type(1n + 2){
+	width: 940px;
+	border-radius: 25px;
+	border: double red;
+	margin: auto;
 }
 
 .clear{
@@ -109,6 +116,69 @@ aside nav ul.nav-list li a:hover{
 
 
 
+
+/* ------------------ header in main ------------------ */
+header.header-info{
+	background-color: red;
+	width: 920px;
+	height: 200px;
+	margin: 20px auto 5px auto;
+}
+
+header.header-info a{
+	display: block;
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	background-image: url('');
+}
+
+header.header-info div.user-info{
+	background-color: green;
+}
+
+div.user-info ul.email-phone-info{
+	background-color: yellow;
+	float: right;
+}
+
+div.user-info ul.email-phone-info li{
+	background-color: white;
+	width: auto;
+	float: left;
+	margin-left: 5px;
+}
+
+main div#up-arrow-hr{
+	height: 20px;
+	width: 940px;
+	margin: auto;
+}
+
+div#bot-triangle{
+	float: left;
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid red;
+	border-left: 20px solid transparent;
+	margin: auto;
+}
+
+div#up-arrow-hr hr#unique-hr{
+	width: 920px;
+	height: 10px;
+	background-color: red;
+	border: none;
+	margin: 10px 0;
+	float: left;
+}
+
+
+
+
+
+
 /* ------------------ main contents ------------------ */
 main#resume{
 	background-color: rgba(12, 12, 12, .2);
@@ -119,7 +189,7 @@ main#resume{
 }
 
 main#resume section{
-	width: 960px;
+	width: 900px;
 	height: auto;
 	margin: 5px auto;
 }
@@ -128,17 +198,6 @@ main#resume section h2{
 	font-size: 1.5em;
 	color: red;
 	border: 1px solid black;
-}
-
-header.user-info{
-	border: 1px solid red;
-	width: 960px;
-	height: 205px;
-	margin: 20px auto 5px auto;
-}
-
-main hr#unique-hr{
-	background-color: black;
 }
 
 section.summary{

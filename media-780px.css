@@ -1,167 +1,174 @@
 /* ------------------- 480 to 780 screens  ------------------- */
-@media all and (min-width: 481px) and (max-width: 780px){
-	/* ------------------- background ------------------- */
-	body{
-		min-width: 481px;
-		max-width: 780px;
-		width: auto;
-		background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-480x275-bw.jpg');;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
-		max-height: 1000px;
-		height: auto;
-		margin: 0;
-		padding: 0;
-	}
+
+/* ------------------- general css ------------------- */
+*{
+	display: block;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.left-column, .main-column, footer.footer-info{
+	width: 100%;
+}
+
+title{
+	display: none;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.main-info-480px{
+	visibility: hidden;
+}
+
+
+/* ------------------ rows ------------------ */
+.left-column{
+	height: 20%;
+	overflow: hidden;
+}
+
+.main-column{
+	padding-top: .2%;
+	overflow: hidden;
+	height: 75%;
+}
+
+footer.footer-info{
+	overflow: hidden;
+	height: 5%;
+}
 
 
 
-	/* ------------------- header ------------------- */
-	header.side-nav{
-		background-color: rgba(12, 12, 12, .3);
-		width: auto;
-		min-height: 150px;
-		height: auto;
-		margin: 10px 10px;
-	}
-
-	header.side-nav a#logo-150px{
-		display: block;
-		float: left;
-		width: 150px;
-		height: 150px;
-		background-image: url("jiehuang-logo-150x150-red.png");
-	}
-
-	header.side-nav nav{
-		background-color: red;
-		float: right;
-		width: auto;
-		height: 100px;
-		margin: 20px;
-	}
-
-	header.side-nav nav ul.nav-list{
-		background-color: blue;
-
-		padding: 0;
-		height: 100px;
-	}
-
-	header nav ul.nav-list li:first-child{
-		padding-right: 2px;
-	}
-
-	header nav ul.nav-list li:last-child{
-		padding-left: 2px;
-	}
-
-	header nav ul.nav-list li{
-		float: left;
-		height: auto;
-		list-style: none;
-		background-color: yellow;
-	}
-
-	header nav ul.nav-list li a{
-		background-color: rgba(12, 12, 12, .1);
-		text-decoration: none;
-		text-align: center;
-		display: block;
-		font-size: 2em;
-		color: white;
-		height: 50px;
-	}
-
-	header nav ul.nav-list li a:hover{
-		background-color: rgba(12, 12, 12, .5);
-		color: green;
-	}
+/* ------------------- background ------------------- */
+body{
+	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-1200x687-bw.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 
 
 
-	/* ------------------ main contents ------------------ */
-	main.main-info{
-		width: 400px;
-		height: 150px;
-		background-color: rgba(12, 12, 12, .45);
-		margin: 50px auto 0 auto;
-		padding: 2px 1px 1px 1px;
-	}
+/* ------------------- header ------------------- */
+header.side-nav{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(12, 12, 12, .3);
+}
 
-	main.main-info p#name{
-		margin: 0;
-		padding: 0;
-		width: 398px;
-		height: 108px;
-		text-align: center;
-		font-size: 5.5em;
-		color: rgba(184, 15, 12, 1);
-	}
+header.side-nav a.logo-150px{
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-image: url("jiehuang-logo-150x150-red.png");
+}
 
-	main.main-info ul#description-list{
-		border-top: 1px dashed red;
-		width: 398px;
-		height: 35px;
-		margin: 0 1px 0 1px;
-		padding: 4px 0 0 0;
-	}
+header.side-nav nav{
+	position: relative;
+	float: right;
+	margin: auto;
+	width: 80%;
+	height: 100%;
+}
 
-	main.main-info ul#description-list li{
-		float: left;
-		display: block;
-		width: 132px;
-		height: 38px;
-		margin-left: 1px;
-		text-align: center;
-		font-size: 1.5em;
-		color: gainsboro;
-	}
+header.side-nav nav ul.nav-list{
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	bottom: 0;
+}
 
-	main.main-info ul#description-list li:first-child{
-		list-style: none;
-		margin-left: 0;
-	}
+header nav ul.nav-list li{
+	margin-top: 5%;
+	width: 33.33%;
+	float: left;
+	bottom: 0;
+}
 
+header nav ul.nav-list li a{
+	background-color: rgba(12, 12, 12, 0);
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	font-size: 1.5em;
+	color: white;
+	transition: background-color .5s;
+	transition: color .5s;
+}
 
-
-	/* ------------------ footer info ------------------ */
-	footer.footer-info{
-		margin: 50px auto 0 auto;
-		width: 100%;
-		height: 30px;
-		bottom: 0;
-		padding: 0;
-		background-color: rgba(12, 12, 12, .25);
-	}
-
-	footer.footer-info p#copyright-info{
-		text-align: center;
-		font-size: 12px;
-		height: 14px;
-		margin: 6px 0;
-		padding: 2px 0;
-	}
-
-	footer.footer-info p#copyright-info span#genitx{
-		color: darkred;
-	}
-
-	footer.footer-info p#copyright-info span#genitx:hover{
-		color: white;
-	}
+header nav ul.nav-list li a:hover{
+	background-color: rgba(12, 12, 12, .3);
+	color: green;
+}
 
 
 
 
+/* ------------------ main contents ------------------ */
+main.main-info{
+	width: 80%;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(12, 12, 12, .45);
+	overflow: hidden;
+}
 
-	/* ------------------- width 480 and smaller ------------------- */
-	@media all and (min-width: 481px){
-		div.main-info-480px{
-			display: none;
-		}
-	}
+main.main-info p.name{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 4rem;
+	color: rgba(184, 15, 12, 1);
+}
 
+main.main-info ul.description-list{
+	border-top: .1em dashed red;
+	width: 100%;
+}
+
+main.main-info ul.description-list li{
+	float: left;
+	width: 33.33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 1.3em;
+	color: gainsboro;
+}
+
+
+
+/* ------------------ footer info ------------------ */
+footer.footer-info{
+	width: 100%;
+	background-color: rgba(12, 12, 12, .25);
+}
+
+footer.footer-info p.copyright-info{
+	width: 100%;
+	height: 100%;
+	padding-top: 1.5%;
+	font-size: .7em;
+	text-align: center;
+}
+
+span.genitx{
+	color: darkred;
+	display: inline;
 }

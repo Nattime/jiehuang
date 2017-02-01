@@ -12,6 +12,10 @@ html, body{
 	height: 95%;
 }
 
+footer.footer-info{
+	height: 5%;
+}
+
 title{
 	display: none;
 }
@@ -26,6 +30,9 @@ html{
 	clear: both;
 }
 
+.main-info-480px{
+	visibility: hidden;
+}
 
 
 
@@ -156,7 +163,6 @@ main.main-info ul.description-list li{
 /* ------------------ footer info ------------------ */
 footer.footer-info{
 	width: 100%;
-	height: 5%;
 	background-color: rgba(12, 12, 12, .25);
 }
 

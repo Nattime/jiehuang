@@ -4,32 +4,23 @@ title{
 }
 
 *{
-	margin: 0;
-	padding: 0;
 	display: block;
 }
 
 html, body{
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	height: auto;
 }
 
 html{
-	height: auto;
-	width: auto;
 	box-sizing: border-box;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
 
-body{
-    width: auto;
-	height: auto;
-	position: relative;
-}
-
-hr:nth-of-type(1n + 2){
-	width: 940px;
+hr{
+	clear: both;
+	width: 90%;
 	border-radius: 25px;
 	border: double red;
 	margin: auto;
@@ -39,6 +30,25 @@ hr:nth-of-type(1n + 2){
 	clear: both;
 }
 
+
+
+/* ------------------ columns ------------------ */
+.left-col, .main-col{
+	height: auto;
+}
+
+.left-col{
+	float: left;
+	width: 20%;
+	/*background-color: blue;*/
+}
+
+.main-col{
+	float: left;
+	width: 60%;
+	margin-right: 20%;
+	background-color: green;
+}
 
 
 
@@ -55,56 +65,35 @@ body{
 /* ------------------ side panels ------------------ */
 aside.side-nav{
 	background-color: rgba(12, 12, 12, .3);
-	width: 100px;
-	margin-top: 20px;
-	margin-left: 20px;
-	padding: 0;
-	position: fixed;
-}
-
-aside a#logo-150px{
-	float: left;
-	padding: 0px;
-	margin: 0;
-	width: 100px;
-	height: 100px;
-	background-image: url("jiehuang-logo-150x150-red.png");
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10%;
 }
 
 aside nav{
-	float: left;
-	width: 100px;
-	height: auto;
-	margin: 0px 1px 1px 0;
-	padding: 0;
+	width: 100%;
+	margin-top: 10%;
 }
 
-aside nav ul.nav-list{
-	width: 100px;
-	height: auto;
-	padding: 0;
-	margin: 0;
-}
 
 aside nav ul.nav-list li{
 	list-style: none;
-	width: 100px;
-	height: 45px;
-	margin: 0;
-	padding: 0;
+	width: 100%;
 }
 
-aside nav ul.nav-list li a{
+ul.nav-list li a{
 	background-color: rgba(12, 12, 12, .1);
 	text-decoration: none;
 	font-size: 1.6em;
 	text-align: center;
 	display: block;
 	color: white;
-	width: 100px;
-	height: 35px;
-	margin: 5px 0;
-	padding: 5px 0 0 0;
+	width: 100%;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	transition: color .5s, background-color .5s;
 }
 
 aside nav ul.nav-list li a:hover{
@@ -120,59 +109,64 @@ aside nav ul.nav-list li a:hover{
 /* ------------------ header in main ------------------ */
 header.header-info{
 	background-color: red;
-	width: 920px;
-	height: 200px;
-	margin: 20px auto 5px auto;
+	width: 100%;
+	margin-bottom: 2%;
+	overflow: hidden;
+	position: relative;
 }
 
 header.header-info a{
 	display: block;
 	float: left;
-	width: 200px;
-	height: 200px;
-	background-color: blue;
-	background-image: url('');
+	background-color: black;
 }
+
 
 header.header-info div.user-info{
+	bottom: 0;
+	right: 0;
+	width: 60%;
 	background-color: green;
+	position: absolute;
 }
 
+div.user-info h2.name{
+	background-color: purple;
+	width: 100%;
+	text-align: right;
+}
 div.user-info ul.email-phone-info{
 	background-color: yellow;
-	float: right;
+	overflow: hidden;
+	width: 100%;
 }
 
 div.user-info ul.email-phone-info li{
 	background-color: white;
 	width: auto;
-	float: left;
+	float: right;
 	margin-left: 5px;
 }
 
-main div#up-arrow-hr{
+/*main div.up-arrow-hr{
 	height: 20px;
-	width: 940px;
-	margin: auto;
+	width: 100%;
+	background-color: green;
 }
 
-div#bot-triangle{
-	float: left;
+div.bot-triangle{
 	width: 0;
 	height: 0;
 	border-bottom: 20px solid red;
 	border-left: 20px solid transparent;
-	margin: auto;
 }
 
-div#up-arrow-hr hr#unique-hr{
-	width: 920px;
+hr.unique-hr{
+	width: 100px;
 	height: 10px;
 	background-color: red;
 	border: none;
-	margin: 10px 0;
-	float: left;
-}
+}*/
 
 
 
@@ -180,44 +174,53 @@ div#up-arrow-hr hr#unique-hr{
 
 
 /* ------------------ main contents ------------------ */
-main#resume{
+main.resume{
 	background-color: rgba(12, 12, 12, .2);
-	width: 980px;
-	height: auto;
-	margin: auto;
-	border: 1px solid blue;
+	width: 100%;
+	margin-top: 5%;
+	background-color: blue;
 }
 
-main#resume section{
-	width: 900px;
+main.resume section{
+	width: 100%;
 	height: auto;
-	margin: 5px auto;
+	background-color: yellow;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-bottom: 2%;
 }
 
-main#resume section h2{
-	font-size: 1.5em;
+main.resume section h2{
+	font-size: 2em;
+	padding-left: 5%;
+	width: 95%;
 	color: red;
-	border: 1px solid black;
+	/*background-color: gray;*/
 }
 
-section.summary{
-	border: 1px solid yellow;
+main.resume section h3{
+	font-size: 1.2em;
+	width: 90%;
+	padding-left: 10%;
+	margin-top: 1%;
+	/*background-color: pink;*/
 }
 
-section.skills{
-	border: 1px solid purple;
+main.resume section p{
+	width: 80%;
+	margin: auto;
+	background-color: red;
 }
 
-section.work-experiences{
-	border: 1px solid green;
+main.resume section ul{
+	width: 80%;
+	background-color: brown;
+	margin: auto;
+	margin-top: 1%;
 }
 
-section.projects-portfolio{
-	border: 1px solid red;
-}
-
-section.education{
-	border: 1px solid white;
+main.resume section ul li{
+	list-style: circle;
 }
 
 
@@ -227,27 +230,22 @@ section.education{
 
 /* ------------------ footer info ------------------ */
 footer.footer-info{
-	width: auto;
-	height: 30px;
-	position: relative;
-	bottom: 0;
-	background-color: rgba(12, 12, 12, .25);
-	border: 1px solid green;
+	width: 100%;
+	background-color: rgba(12, 12, 12, .2);
 }
 
-footer.footer-info p#copyright-info{
+footer.footer-info p.copyright-info{
 	text-align: center;
-	font-size: 12px;
-	height: 14px;
-	margin: 6px 0;
-	padding: 2px 0;
+	font-size: .75em;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
-footer.footer-info p#copyright-info span#genitx{
+span.genitx{
 	display: inline;
 	color: darkred;
 }
 
-footer.footer-info p#copyright-info span#genitx:hover{
+span.genitx:hover{
 	color: white;
 }

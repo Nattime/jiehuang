@@ -28,15 +28,18 @@ html{
 	clear: both;
 }
 
-.main-info-480px{
-	visibility: hidden;
+h2.name, .nav-list li{
+	font-family: Arial;
 }
+
+
 
 
 /* ------------------ rows ------------------ */
 .left-column{
 	height: 20%;
 	overflow: hidden;
+
 }
 
 .main-column{
@@ -58,6 +61,7 @@ body{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 }
 
 
@@ -68,21 +72,20 @@ header.side-nav{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(12, 12, 12, .3);
+
 }
 
 header.side-nav a.logo-150px{
-	float: left;
-	width: 20%;
-	height: 100%;
-	background-image: url("jiehuang-logo-150x150-red.png");
+	visibility: hidden;
 }
 
 header.side-nav nav{
 	position: relative;
-	float: right;
+
 	margin: auto;
 	width: 80%;
 	height: 100%;
+
 }
 
 header.side-nav nav ul.nav-list{
@@ -128,7 +131,7 @@ main.main-info{
 	overflow: hidden;
 }
 
-main.main-info p.name{
+main.main-info h2.name{
 	width: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;

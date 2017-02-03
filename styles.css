@@ -30,8 +30,8 @@ html{
 	clear: both;
 }
 
-.main-info-480px{
-	visibility: hidden;
+h2.name, .nav-list li{
+	font-family: Arial;
 }
 
 
@@ -70,6 +70,7 @@ header.side-nav{
 	background-color: rgba(12, 12, 12, .3);
 	padding-top: 2%;
 	width: 80%;
+	min-width: 150px;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
@@ -129,10 +130,9 @@ main.main-info{
 	margin-top: 23%;
 	margin-left: 10%;
 	background-color: rgba(12, 12, 12, .45);
-	overflow: hidden;
 }
 
-main.main-info p.name{
+main.main-info h2.name{
 	width: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -144,6 +144,7 @@ main.main-info p.name{
 main.main-info ul.description-list{
 	border-top: .1em dashed red;
 	width: 100%;
+	overflow: hidden;
 }
 
 main.main-info ul.description-list li{

@@ -1,133 +1,177 @@
-/* ------------------- 480x800 screen or smaller ------------------- */
-@media all and (max-width: 480px){
-	/* ------------------- hidden items ------------------- */
-	header.side-nav{
-		display: none;
-	}
-	main.main-info{
-		display: none;
-	}
-	body footer.footer-info{
-		display: none;
-	}
-
-
-
-	/* ------------------- shown items ------------------- */
-	div.main-info-480px{
-	}
-
-
-	/* ------------------- background ------------------- */
-	body{
-		background: none;
-		max-width: 480px;
-		width: auto;
-		height: auto;
-		margin: 0;
-		padding: 0;
-	}
-
-
-	/* ------------------- header ------------------- */
-	div.main-info-480px header{
-		max-width: 480px;
-		width: auto;
-		height: 220px;
-		background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-480x275-bw.jpg');
-	}
-
-	div.main-info-480px header a{
-		position: relative;
-		top: 80px;
-		margin: auto;
-		display: block;
-		height: 200px;
-		width: 200px;
-		background-image: url('jiehuang-logo-150x150-red.png');
-	}
-
-
-	/* ------------------- main content ------------------- */
-	div.main-info-480px div.contents-480px{
-		background-color: white;
-		height: auto;
-		padding: 65px 0 10px 0;
-		margin: 0;
-	}
-
-	div.main-info-480px div.contents-480px *{
-		width: 400px;
-		margin: auto;
-		height: auto;
-		text-align: center;
-	}
-
-	div.main-info-480px div.contents-480px h2{
-		background-color: rgba(12, 12, 12, .1);
-		margin-top: 15px;
-		margin-bottom: 5px;
-	}
-
-	div.main-info-480px div.contents-480px p{
-		font-size: .9em;
-		color: red;
-		margin-bottom: 5px;
-	}
-
-	div.main-info-480px div.contents-480px nav{
-		min-height: 60px;
-	}
-
-	div.main-info-480px div.contents-480px nav *{
-		width: 400px;
-		margin: 0;
-		padding: 0;
-		height: auto;
-		text-align: center;
-	}
-
-	div.main-info-480px div.contents-480px nav li{
-		list-style: none;
-		height: 25px;
-	}
-
-	div.main-info-480px div.contents-480px nav li:first-child{
-		margin-bottom: 10px;
-	}
-
-	div.main-info-480px div.contents-480px nav li a{
-		display: block;
-		font-size: 1.3em;
-		background-color: rgba(9, 9, 9, .2);
-		text-decoration: none;
-		width: 200px;
-		margin: auto;
-		height: auto;
-	}
-
-
-
-
-	/* ------------------- footer ------------------- */
-	footer.footer-480px{
-		width: auto;
-		height: auto;
-		margin: auto;
-		padding: 0;
-		background-color: rgba(12, 12, 12, .25);
-	}
-
-	footer.footer-480px p#copyright-info{
-		text-align: center;
-		font-size: 10px;
-		height: auto;
-		margin: auto;
-		padding: 2px 0;
-	}
-
-	footer.footer-480px p#copyright-info span#genitx{
-		color: darkred;
-	}
-
+/* ------------------- 479.99 screen or smaller ------------------- */
+/* ------------------- general css ------------------- */
+*{
+	display: block;
 }
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.left-column, .main-column, .footer-info{
+	width: 100%;
+}
+
+title{
+	display: none;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.visible{
+	visibility: hidden;
+}
+
+
+
+
+
+/* ------------------- row sections ------------------- */
+.left-column{
+	height: 20%;
+	background-color: green;
+}
+
+.main-column{
+	height: 75%;
+	background-color: yellow;
+}
+
+footer.footer-info{
+	height: 5%;
+	background-color: red;
+}
+
+
+
+
+
+
+/* ------------------- background ------------------- */
+body{
+	background: none;
+	background-color: blue;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+/* ------------------- header ------------------- */
+header.side-nav{
+	width: 100%;
+	height: 100%;
+	/*background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-480x275-bw.jpg');*/
+	background-color: gray;
+	position: relative;
+}
+
+header.side-nav a{
+	position: absolute;
+	bottom: -50%;
+	left: 33%;
+	right: auto;
+	display: block;
+	background-color: green;
+	width: 150px;
+	height: 150px;
+	background-image: url('jiehuang-logo-150x150-red.png');
+	background-size: cover;
+}
+
+
+
+
+
+
+/* ------------------- main content ------------------- */
+main.main-info{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+
+main.main-info *{
+	width: 400px;
+	margin: auto;
+	height: auto;
+	text-align: center;
+}
+
+main.main-info h2{
+	position: fixed;
+	background-color: rgba(12, 12, 12, .1);
+	margin-top: 20%;
+}
+/*
+main.main-info ul li{
+	font-size: .9em;
+	color: red;
+	margin-bottom: 5px;
+}
+
+main.main-info nav{
+	min-height: 60px;
+}
+
+main.main-info nav *{
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	text-align: center;
+}
+
+main.main-info nav li{
+	list-style: none;
+	height: 25px;
+}
+
+main.main-info nav li:first-child{
+	margin-bottom: 10px;
+}
+
+main.main-info nav li a{
+	display: block;
+	font-size: 1.3em;
+	background-color: rgba(9, 9, 9, .2);
+	text-decoration: none;
+	width: 200px;
+	margin: auto;
+	height: auto;
+}*/
+
+
+
+/* ------------------ footer info ------------------ */
+/*footer.footer{
+	width: auto;
+	height: auto;
+	margin: auto;
+	padding: 0;
+	background-color: rgba(12, 12, 12, .25);
+}
+
+footer.footer-info p.copyright-info{
+	text-align: center;
+	font-size: 10px;
+	height: auto;
+	margin: auto;
+	padding: 2px 0;
+}
+
+footer.footer-info p.copyright-info span.genitx{
+	color: darkred;
+}*/

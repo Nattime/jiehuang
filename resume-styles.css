@@ -47,7 +47,7 @@ hr{
 	float: left;
 	width: 60%;
 	margin-right: 20%;
-	background-color: green;
+	/*background-color: green;*/
 }
 
 
@@ -108,7 +108,7 @@ aside nav ul.nav-list li a:hover{
 
 /* ------------------ header in main ------------------ */
 header.header-info{
-	background-color: red;
+	/*background-color: red;*/
 	width: 100%;
 	margin-bottom: 2%;
 	overflow: hidden;
@@ -118,34 +118,36 @@ header.header-info{
 header.header-info a{
 	display: block;
 	float: left;
-	background-color: black;
+	/*background-color: black;*/
 }
 
 
 header.header-info div.user-info{
 	bottom: 0;
-	right: 0;
+	right: 2%;
 	width: 60%;
-	background-color: green;
+	/*background-color: green;*/
 	position: absolute;
 }
 
 div.user-info h2.name{
-	background-color: purple;
+	font-size: 3.2em;
+	font-family: Arial;
+	/*background-color: purple;*/
 	width: 100%;
 	text-align: right;
 }
 div.user-info ul.email-phone-info{
-	background-color: yellow;
+	/*background-color: yellow;*/
 	overflow: hidden;
 	width: 100%;
 }
 
 div.user-info ul.email-phone-info li{
-	background-color: white;
+	/*background-color: white;*/
 	width: auto;
 	float: right;
-	margin-left: 5px;
+	margin-left: 5%;
 }
 
 /*main div.up-arrow-hr{
@@ -177,28 +179,30 @@ hr.unique-hr{
 main.resume{
 	background-color: rgba(12, 12, 12, .2);
 	width: 100%;
-	margin-top: 5%;
-	background-color: blue;
+	margin-top: 2%;
+	/*background-color: blue;*/
 }
 
 main.resume section{
 	width: 100%;
 	height: auto;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	margin-top: 2%;
 	margin-bottom: 2%;
 	padding-bottom: 2%;
+	overflow: hidden;
 }
 
-main.resume section h2{
+section h2{
 	font-size: 2em;
+	font-family: Tahoma;
 	padding-left: 5%;
 	width: 95%;
 	color: red;
 	/*background-color: gray;*/
 }
 
-main.resume section h3{
+section h3{
 	font-size: 1.2em;
 	width: 90%;
 	padding-left: 10%;
@@ -207,22 +211,97 @@ main.resume section h3{
 }
 
 main.resume section p{
-	width: 80%;
+	font-family: Times;
+	width: 78%;
+	padding: 2%;
 	margin: auto;
-	background-color: red;
+	font-size: 1em;
+	text-align: justify;
+	background-color: rgba(12, 12, 12, .2);
+	border-radius: 0 25px;
 }
 
-main.resume section ul{
+section h2+ul{
+	border-radius: 0 25px;
+}
+
+
+section h2+ul li:first-of-type{
+	border-radius: 0 20px 0 0;
+}
+
+section h2+ul li:last-of-type{
+	border-radius: 0 0 0 20px;
+}
+
+section h2+ul li:only-child{
+	border-radius: 0 20px;
+}
+
+section ul{
 	width: 80%;
-	background-color: brown;
+	/*background-color: brown;*/
+	font-family: Times;
+	background-color: rgba(12, 12, 12, .2);
 	margin: auto;
 	margin-top: 1%;
+	overflow: hidden;
 }
 
-main.resume section ul li{
-	list-style: circle;
+h3+ul{
+	width: 75%;
 }
 
+section ul li{
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: green;*/
+	overflow: hidden;
+	text-align: justify;
+	padding: 2%;
+	margin: 2%;
+	width: 92%;
+}
+
+section.skills li{
+	width: 46%;
+	text-align: center;
+	margin: 1%;
+	padding: 1%;
+}
+
+section.skills ul li:nth-of-type(even){
+	float: right;
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: green;*/
+}
+
+section.skills ul li:nth-of-type(odd){
+	float: left;
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: pink;*/
+	text-align: center;
+}
+
+div.left-section-col{
+	float: left;
+	width: 50%;
+	/*background-color: red;*/
+}
+
+div.right-section-col{
+	float: right;
+	width: 50%;
+	/*background-color: black;*/
+}
+
+.projects-portfolio li{
+	text-align: center;
+}
+
+span.bold{
+	display: inline;
+	font-weight: bold;
+}
 
 
 

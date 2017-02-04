@@ -70,10 +70,10 @@ body{
 
 
 /* ------------------- header ------------------- */
-header.side-nav{
+/*header.side-nav{
 	width: 100%;
 	height: 100%;
-	/*background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-480x275-bw.jpg');*/
+	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .35)), url('landscape-img-480x275-bw.jpg');
 	background-color: gray;
 	position: relative;
 }
@@ -89,7 +89,7 @@ header.side-nav a{
 	height: 150px;
 	background-image: url('jiehuang-logo-150x150-red.png');
 	background-size: cover;
-}
+}*/
 
 
 
@@ -97,7 +97,7 @@ header.side-nav a{
 
 
 /* ------------------- main content ------------------- */
-main.main-info{
+/*main.main-info{
 	height: 100%;
 	width: 100%;
 	background-color: white;
@@ -114,7 +114,7 @@ main.main-info h2{
 	position: fixed;
 	background-color: rgba(12, 12, 12, .1);
 	margin-top: 20%;
-}
+}*/
 /*
 main.main-info ul li{
 	font-size: .9em;

@@ -68,19 +68,40 @@ body{
 /* ------------------ side panels ------------------ */
 header.side-nav{
 	background-color: rgba(12, 12, 12, .3);
-	padding-top: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	width: 80%;
 	min-width: 150px;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
+	/*background-color: green;*/
 }
 
-header a.logo-150px{
-	width: 150px;
-	height: 150px;
+header.side-nav a{
+	width: 98%;
 	margin: auto;
-	background-image: url("jiehuang-logo-150x150-red.png");
+	height: auto;
+	background-color: rgba(12, 12, 12, .1);
+	transition: background-color .5s;
+	/*background-color: blue;*/
+}
+
+header.side-nav a:hover{
+	background-color: rgba(12, 12, 12, .4);
+	/*background-color: blue;*/
+}
+
+header a img{
+	/*background-color: yellow;*/
+	width: 100%;
+	margin: auto;
+	opacity: .6;
+	transition: opacity .5s;
+}
+
+header a img:hover{
+	opacity: .9;
 }
 
 header nav{

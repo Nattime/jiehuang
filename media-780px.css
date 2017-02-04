@@ -37,20 +37,19 @@ h2.name, .nav-list li{
 
 /* ------------------ rows ------------------ */
 .left-column{
-	height: 20%;
+	/*background-color: white;*/
 	overflow: hidden;
-
 }
 
 .main-column{
 	padding-top: .2%;
-	overflow: hidden;
-	height: 75%;
+	/*overflow: hidden;*/
+	min-height: 75%;
 }
 
 footer.footer-info{
-	overflow: hidden;
-	height: 5%;
+	/*overflow: hidden;*/
+	min-height: 5%;
 }
 
 
@@ -70,52 +69,50 @@ body{
 /* ------------------- header ------------------- */
 header.side-nav{
 	width: 100%;
-	height: 100%;
 	background-color: rgba(12, 12, 12, .3);
-
+	/*background-color: green;*/
+	overflow: hidden;
 }
 
 header.side-nav a.logo-150px{
-	visibility: hidden;
+	/*background-color: blue;*/
+	background-color: rgba(12, 12, 12, .1);
+	width: 20%;
+	margin: auto;
+	float: left;
+}
+
+header.side-nav a img{
+	/*background-color: brown;*/
+	width: 100%;
+	height: auto;
+	opacity: .8;
 }
 
 header.side-nav nav{
-	position: relative;
-
-	margin: auto;
+	/*background-color: yellow;*/
+	float: right;
+	margin-top: 10%;
 	width: 80%;
-	height: 100%;
-
-}
-
-header.side-nav nav ul.nav-list{
-	position: absolute;
-	width: 100%;
-	height: 70%;
-	bottom: 0;
+	overflow: hidden;
 }
 
 header nav ul.nav-list li{
-	margin-top: 5%;
+	/*background-color: brown;*/
 	width: 33.33%;
 	float: left;
-	bottom: 0;
+	/*bottom: 0;*/
 }
 
 header nav ul.nav-list li a{
-	background-color: rgba(12, 12, 12, 0);
+	/*background-color: rgba(12, 12, 12, 0);*/
+	/*background-color: red;*/
 	text-decoration: none;
 	text-align: center;
-	display: block;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: white;
-	transition: background-color .5s;
-	transition: color .5s;
-}
-
-header nav ul.nav-list li a:hover{
-	background-color: rgba(12, 12, 12, .3);
-	color: green;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 
@@ -165,8 +162,7 @@ footer.footer-info{
 
 footer.footer-info p.copyright-info{
 	width: 100%;
-	height: 100%;
-	padding-top: 1.5%;
+	padding-top: 1%;
 	font-size: .7em;
 	text-align: center;
 }

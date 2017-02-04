@@ -65,10 +65,12 @@ body{
 /* ------------------ side panels ------------------ */
 aside.side-nav{
 	background-color: rgba(12, 12, 12, .3);
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 aside nav{
@@ -76,6 +78,27 @@ aside nav{
 	margin-top: 10%;
 }
 
+aside.side-nav a{
+	width: 75%;
+	margin: auto;
+	margin-top: 5%;
+	background-color: rgba(1, 1, 1, .05);
+	transition: background-color .5s;
+	/*background-color: yellow;*/
+}
+
+aside.side-nav a:hover{
+	width: 75%;
+	margin: auto;
+	margin-top: 5%;
+	background-color: rgba(12, 12, 12, .5);
+	/*background-color: yellow;*/
+}
+
+aside.side-nav a img{
+	width: 100%;
+	/*background-color: green;*/
+}
 
 aside nav ul.nav-list li{
 	list-style: none;
@@ -96,9 +119,10 @@ ul.nav-list li a{
 	transition: color .5s, background-color .5s;
 }
 
-aside nav ul.nav-list li a:hover{
+ul.nav-list li a:hover{
 	background-color: rgba(12, 12, 12, .5);
 	color: green;
+	width: 100%;
 }
 
 
@@ -113,6 +137,26 @@ header.header-info{
 	margin-bottom: 2%;
 	overflow: hidden;
 	position: relative;
+}
+
+header.header-info a{
+	height: 100%;
+	margin: auto;
+	margin-top: 1%;
+	margin-left: 1%;
+	background-color: rgba(1, 1, 1, .05);
+	transition: color .5s, background-color .5s;
+	/*background-color: yellow;*/
+}
+
+header.header-info a:hover{
+	background-color: rgba(12, 12, 12, .5);
+	/*background-color: yellow;*/
+}
+
+header.header-info a img{
+	width: 100%;
+	/*background-color: green;*/
 }
 
 header.header-info a{

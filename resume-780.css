@@ -122,7 +122,7 @@ main.resume{
 header.header-info{
 	/*background-color: red;*/
 	width: 100%;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 	overflow: hidden;
 	position: relative;
 }
@@ -130,6 +130,7 @@ header.header-info{
 header.header-info a{
 	background-color: rgba(1, 1, 1, .05);
 	/*background-color: yellow;*/
+	width: 20%;
 	margin: auto;
 	margin-top: 1%;
 	margin-left: 1%;
@@ -147,9 +148,12 @@ header.header-info div.user-info{
 	/*background-color: green;*/
 	bottom: 0;
 	right: 2%;
-	width: 60%;
-	margin-bottom: 2%;
+	width: 75%;
+	max-height: 90%;
+	margin-bottom: 1%;
+	margin-top: 1%;
 	position: absolute;
+	overflow: hidden;
 }
 
 div.user-info h2.name{
@@ -158,7 +162,7 @@ div.user-info h2.name{
 	font-family: Arial;
 	width: 100%;
 	text-align: right;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 
 div.user-info ul.email-phone-info{

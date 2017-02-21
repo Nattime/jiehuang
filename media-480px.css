@@ -6,7 +6,7 @@
 
 html, body{
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .left-column, .main-column, .footer-info{
@@ -38,17 +38,17 @@ html{
 /* ------------------- row sections ------------------- */
 .left-column{
 	/*background-color: green;*/
-	height: 30%;
+	/*height: 30%;*/
 }
 
 .main-column{
 	/*background-color: yellow;*/
-	height: 65%;
+	/*height: 65%;*/
 }
 
 footer.footer-info{
 	/*background-color: red;*/
-	height: 5%;
+	/*height: 5%;*/
 }
 
 

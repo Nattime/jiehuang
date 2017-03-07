@@ -1,0 +1,173 @@
+/* ------------------- general css ------------------- */
+*{
+	display: block;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.left-column, .right-column{
+	height: 100%;
+}
+
+title{
+	display: none;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+h2.name, .nav-list li{
+	font-family: Arial;
+}
+
+
+
+
+/* ------------------ background ------------------ */
+/*body{
+	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .25)), url("../img/landscape-img-1200x687-bw.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+
+
+
+
+/* ------------------ columns ------------------ */
+.left-column{
+	background-color: red;
+	width: 5%;
+	float: left;
+}
+
+.right-column{
+	background-color: blue;
+	width: 95%;
+	float: right;
+}
+
+
+
+
+
+/* ------------------ side panels ------------------ */
+.menu-item-container{
+	background-color: blue;
+	margin: 30% 15% 10%;
+	width: 70%;
+	overflow: hidden;
+}
+
+.menu-icon{
+	background-color: green;
+	width: 100%;
+	cursor: pointer;
+	height: auto;
+	float: left;
+	border-radius: 15px;
+}
+
+.menu-icon:hover{
+	background-color: white;
+}
+
+.menu-description{
+	background-color: yellow;
+	float: left;
+	width: 70%;
+}
+
+.hidden-item{
+	display: none;
+}
+
+.list-item-container{
+	background-color: black;
+	margin: 4% 25%;
+	width: 50%;
+	overflow: hidden;
+}
+
+.list-item-container > a{
+	background-color: white;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.list-item-container > a > img:hover{
+	background-color: white;
+}
+
+.list-item-container > a > img{
+	background-color: brown;
+	width: 100%;
+	margin: 0%;
+}
+
+.item-description{
+	background-color: yellow;
+	float: left;
+	width: 70%;
+}
+
+
+
+
+
+/* ------------------ main contents ------------------ */
+.img{
+	width: 20%;
+	transition: width .5s;
+	float: left;
+}
+
+.img:hover{
+	width: 40%;
+}
+
+
+/*main.main-info{
+	width: 60%;
+	margin-top: 23%;
+	margin-left: 10%;
+	background-color: rgba(12, 12, 12, .45);
+}
+
+main.main-info h2.name{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 5.5rem;
+	color: rgba(184, 15, 12, 1);
+}
+
+main.main-info ul.description-list{
+	border-top: .1em dashed red;
+	width: 100%;
+	overflow: hidden;
+}
+
+main.main-info ul.description-list li{
+	float: left;
+	width: 33.33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 1.5em;
+	color: gainsboro;
+}*/

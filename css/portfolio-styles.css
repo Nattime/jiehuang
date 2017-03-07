@@ -1,0 +1,297 @@
+/*------------ portfolio css -----------*/
+
+/* ------------------- general css ------------------- */
+*{
+	display: block;
+	box-sizing: border-box;
+}
+
+title{
+	display: none;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+section{
+	background-color: violet;
+	/*display: table;*/
+	width: 100vw;
+	max-width: none;
+	height: 98vh;
+	margin-bottom: 2%;
+	overflow: hidden;
+}
+
+
+
+
+/* ------------------ background ------------------ */
+/*body{
+	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .25)), url("../img/landscape-img-1200x687-bw.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+
+
+
+
+
+/* ------------------ rows ------------------ */
+.main-row{
+	background-color: green;
+	overflow: hidden;
+}
+
+.footer-row{
+	background-color: blue;
+	padding: 2% 0;
+}
+
+
+
+
+
+/* ------------------ first section ------------------ */
+.first-section-top-nav-container{
+	background-color: rgba(12, 12, 12, .3);
+	/*background-color: blue;*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.top-nav{
+	/*background-color: yellow;*/
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.top-nav > a{
+	background-color: rgba(12, 12, 12, .1);
+	transition: background-color .5s;
+	/*background-color: red;*/
+	display: block;
+	float: left;
+	width: 15%;
+	margin: 1% 0% 1% 5%;
+
+}
+
+.top-nav > a:hover{
+	background-color: rgba(12, 12, 12, .4);
+	/*background-color: black;*/
+}
+
+.top-nav > nav{
+	/*background-color: brown;*/
+	width: 70%;
+	float: left;
+	margin: 5% 5% 1% 5%;
+}
+
+.top-nav > a > img{
+	/*background-color: yellow;*/
+	width: 100%;
+	height: auto;
+	opacity: .6;
+	transition: opacity .5s;
+}
+
+.top-nav > a > img:hover{
+	opacity: .9;
+}
+
+ul.nav-list{
+	/*background-color: white;*/
+	font-size: 2vw;
+	width: 100%;
+	margin: 1% 0% 1% 0%;
+	overflow: hidden;
+}
+
+ul.nav-list > li{
+	/*background-color: red;*/
+	list-style: none;
+	width: 25%;
+	/*margin: 0% 2.5%;*/
+	float: left;
+	text-align: center;
+}
+
+ul.section-nav-list{
+	/*background-color: blue;*/
+	overflow: hidden;
+	margin: 1% 0%;
+	font-size: 1.5vw;
+}
+
+ul.section-nav-list > li{
+	/*background-color: gray;*/
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+ul.nav-list > li > a, ul.section-nav-list > li > a{
+	display: block;
+	/*background-color: rgba(12, 12, 12, .1);*/
+	text-decoration: none;
+	color: white;
+	transition: all .2s;
+	transition: all .2s;
+	border-bottom: 1px solid limegreen;
+}
+
+ul.nav-list > li > a{
+	padding: 5% 0%;
+}
+
+ ul.section-nav-list > li > a{
+	 padding: 2% 0%;
+	 width: 100%;
+	 margin: auto;
+ }
+
+ul.nav-list > li > a:hover, ul.section-nav-list > li > a:hover{
+	background-color: rgba(12, 12, 12, .1);
+	color: green;
+	border-color: red;
+}
+
+.first-section-bottom-container{
+	background-color: white;
+	margin: 5% auto;
+	padding: 5%;
+	width: 80vw;
+}
+
+.intro-summary{
+	background-color: red;
+}
+
+
+
+
+
+
+
+/* ------------------ main contents ------------------ */
+
+.section-containers{
+	background-color: white;
+	width: 80%;
+	height: 96%;
+	margin: 1% auto;
+	padding: 5% 0% 0% 0%;
+	overflow: hidden;
+}
+
+.vertical-containers{
+	background-color: yellow;
+	width: 100%;
+	height: 30%;
+}
+
+.horizontal-containers{
+	background-color: yellow;
+	width: 33.33%;
+	height: 80vh;
+	float: left;
+}
+
+/*main.main-info{
+	width: 60%;
+	margin-top: 23%;
+	margin-left: 10%;
+	background-color: rgba(12, 12, 12, .45);
+}
+
+main.main-info h2.name{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 5.5rem;
+	color: rgba(184, 15, 12, 1);
+}
+
+main.main-info ul.description-list{
+	border-top: .1em dashed red;
+	width: 100%;
+	overflow: hidden;
+}
+
+main.main-info ul.description-list li{
+	float: left;
+	width: 33.33%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 1.5em;
+	color: gainsboro;
+}*/
+
+
+
+
+
+/* ------------------ footer info ------------------ */
+.contact-info, .copyright-info{
+	background-color: rgba(12, 12, 12, .25);
+	background-color: yellow;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul.personal-info, ul.social-media-info{
+	background-color: rgba(12, 12, 12, .25);
+	float: left;
+	background-color: brown;
+	margin: 1% 5%;
+	width: 40%;
+}
+
+ul.personal-info li, ul.social-media-info li{
+	background-color: white;
+	overflow: hidden;
+}
+
+ul.personal-info li a, ul.social-media-info li a{
+	background-color: gray;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+ul.personal-info li p, ul.social-media-info li p{
+	background-color: green;
+}
+
+ul.personal-info img, ul.social-media-info img{
+	width: 50px;
+	height: auto;
+}
+
+.copyright-info p *{
+	display: inline;
+}
+
+span.genitx{
+	color: darkred;
+	display: inline;
+}
+
+span.genitx:hover{
+	color: white;
+}

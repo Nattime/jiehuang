@@ -1,0 +1,389 @@
+/* ------------------- general css ------------------- */
+title{
+	display: none;
+}
+
+*{
+	display: block;
+}
+
+html, body{
+	width: 100%;
+	height: auto;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+hr{
+	clear: both;
+	width: 90%;
+	border-radius: 25px;
+	border: double red;
+	margin: auto;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+
+/* ------------------ columns ------------------ */
+.left-col, .main-col{
+	height: auto;
+}
+
+/*.left-col{
+	float: left;
+	width: 20%;
+	background-color: blue;
+}*/
+
+.main-col{
+	width: 60%;
+	margin: auto;
+	/*background-color: green;*/
+}
+
+
+
+
+/* ------------------ background ------------------ */
+body{
+	background-color: white;
+}
+
+
+
+
+
+/* ------------------ side panels ------------------ */
+aside.side-nav{
+	background-color: rgba(12, 12, 12, .3);
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+aside nav{
+	width: 100%;
+	margin-top: 10%;
+}
+
+aside.side-nav a{
+	width: 95%;
+	margin: auto;
+	background-color: rgba(1, 1, 1, .05);
+	transition: background-color .3s;
+	/*background-color: yellow;*/
+}
+
+aside.side-nav a:hover{
+	background-color: rgba(12, 12, 12, .5);
+	/*background-color: yellow;*/
+}
+
+aside.side-nav a img{
+	/*background-color: green;*/
+	width: 100%;
+	height: auto;
+	opacity: .7;
+	transition: opacity .3s;
+}
+
+aside.side-nav a img:hover{
+	opacity: .9;
+}
+
+aside nav ul.nav-list li{
+	list-style: none;
+	width: 100%;
+}
+
+ul.nav-list li a{
+	background-color: rgba(12, 12, 12, .1);
+	text-decoration: none;
+	font-size: 1.6em;
+	text-align: center;
+	display: block;
+	color: white;
+	width: 100%;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	transition: color .5s, background-color .5s;
+}
+
+ul.nav-list li a:hover{
+	background-color: rgba(12, 12, 12, .5);
+	color: green;
+	width: 100%;
+}
+
+
+
+
+
+
+/* ------------------ header in main ------------------ */
+header.header-info{
+	background-color: red;
+	width: 100%;
+	margin-bottom: 2%;
+	/*overflow: hidden;*/
+}
+
+header.header-info > a{
+	width: 15%;
+	margin-top: 5%;
+	margin-left: 5%;
+	background-color: rgba(1, 1, 1, .05);
+	transition: color .5s, background-color .5s;
+	display: block;
+	float: left;
+	/*background-color: yellow;*/
+}
+
+header.header-info > a:hover{
+	background-color: rgba(12, 12, 12, .5);
+	/*background-color: yellow;*/
+}
+
+header.header-info a img{
+	width: 100%;
+	height: auto;
+	/*background-color: green;*/
+}
+
+header.header-info div.user-info{
+	/*background-color: green;*/
+	margin: 9% 5% 0% 5%;
+	width: 70%;
+	height: 5vw;
+	float: left;
+	/*overflow: hidden;*/
+}
+
+div.user-info h2.name{
+	/*background-color: purple;*/
+	font-size: 4.5vw;
+	font-family: Arial;
+	width: 100%;
+	text-align: right;
+	margin-bottom: 1%;
+}
+
+div.user-info ul.email-phone-info{
+	/*background-color: yellow;*/
+	overflow: hidden;
+	width: 100%;
+}
+
+div.user-info ul.email-phone-info li{
+	/*background-color: white;*/
+	width: 33.33%;
+	float: left;
+	text-align: right;
+	font-size: 1.2vw;
+}
+
+ul.email-phone-info li a{
+	text-decoration: none;
+}
+
+/*main div.up-arrow-hr{
+	height: 20px;
+	width: 100%;
+	background-color: green;
+}
+
+div.bot-triangle{
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid red;
+	border-left: 20px solid transparent;
+}
+
+hr.unique-hr{
+	width: 100px;
+	height: 10px;
+	background-color: red;
+	border: none;
+}*/
+
+
+
+
+
+
+/* ------------------ main contents ------------------ */
+main.resume{
+	/*background-color: rgba(12, 12, 12, .2);*/
+	width: 100%;
+	margin-top: 2%;
+	box-shadow: -5px -1px 30px #000;
+	/*background-color: blue;*/
+}
+
+main.resume section{
+	width: 100%;
+	height: auto;
+	/*background-color: yellow;*/
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 2em;
+	font-family: Tahoma;
+	padding-left: 5%;
+	width: 95%;
+	color: red;
+	/*background-color: gray;*/
+}
+
+section h3{
+	font-size: 1.2em;
+	width: 90%;
+	padding-left: 10%;
+	margin-top: 1%;
+	/*background-color: pink;*/
+}
+
+main.resume section > p{
+	font-family: Times;
+	width: 78%;
+	padding: 2%;
+	margin: auto;
+	font-size: 1em;
+	text-align: justify;
+	background-color: rgba(12, 12, 12, .2);
+	border-radius: 0 25px;
+}
+
+section h2+ul{
+	border-radius: 0 25px;
+}
+
+section > h2+ul > li > p > span.indent{
+	margin-top: 1%;
+	text-indent: 2%;
+}
+
+
+section h2+ul li:first-of-type{
+	border-radius: 0 20px 0 0;
+}
+
+section h2+ul li:last-of-type{
+	border-radius: 0 0 0 20px;
+}
+
+section h2+ul li:only-child{
+	border-radius: 0 20px;
+}
+
+section ul{
+	width: 80%;
+	/*background-color: brown;*/
+	font-family: Times;
+	background-color: rgba(12, 12, 12, .2);
+	margin: auto;
+	margin-top: 1%;
+	overflow: hidden;
+}
+
+h3+ul{
+	width: 75%;
+}
+
+section ul li{
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: green;*/
+	overflow: hidden;
+	text-align: justify;
+	padding: 2%;
+	margin: 2%;
+	width: 92%;
+}
+
+
+
+section.skills li{
+	width: 46%;
+	text-align: center;
+	margin: 1%;
+	padding: 1%;
+}
+
+section.skills ul li:nth-of-type(even){
+	float: right;
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: green;*/
+}
+
+section.skills ul li:nth-of-type(odd){
+	float: left;
+	background-color: rgba(12, 12, 12, .2);
+	/*background-color: pink;*/
+	text-align: center;
+}
+
+div.left-section-col{
+	float: left;
+	width: 50%;
+	/*background-color: red;*/
+}
+
+div.right-section-col{
+	float: right;
+	width: 50%;
+	/*background-color: black;*/
+}
+
+.projects-portfolio li{
+	text-align: center;
+}
+
+span.bold{
+	display: inline;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+
+
+
+
+/* ------------------ footer info ------------------ */
+footer.footer-info{
+	width: 100%;
+	background-color: rgba(12, 12, 12, .2);
+}
+
+footer.footer-info p.copyright-info{
+	text-align: center;
+	font-size: .75em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+span.genitx{
+	display: inline;
+	color: darkred;
+}
+
+span.genitx:hover{
+	color: white;
+}

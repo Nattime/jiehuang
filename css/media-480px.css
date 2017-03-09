@@ -59,6 +59,7 @@ footer.footer-info{
 /* ------------------- background ------------------- */
 body{
 	/*background-color: blue;*/
+	position: relative;
 }
 
 
@@ -162,8 +163,9 @@ main.main-info ul.description-list li{
 
 /* ------------------ footer info ------------------ */
 footer.footer-info{
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	min-height: 80%;
 	background-color: rgba(12, 12, 12, .25);
 }
 

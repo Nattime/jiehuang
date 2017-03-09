@@ -7,9 +7,12 @@ window.onload = function(){
 		// alert(w);
 		var footer_info = document.getElementsByClassName("footer-info");
 		var logo_img = document.getElementsByClassName("logo-150px");
-		var nav_list = document.getElementsByClassName("nav-list");
+		var nav = document.getElementById("nav");
+		var main_info_height = document.getElementsByClassName("main-info")[0].offsetHeight;
 
+		// alert(main_info_height);
 		logo_img[0].style.margin = "0px " + ((w - 150) / 2) + "px";
-		nav_list[0].style.margin = "0px " + ((w - 200) / 2) + "px";
+		logo_img[0].style.bottom = -75 + "px";
+		nav.style.margin = main_info_height + "px " + ((w - 200) / 2) + "px";
 	}
 }

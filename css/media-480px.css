@@ -42,7 +42,8 @@ html{
 }
 
 .main-column{
-	/*background-color: yellow;*/
+	background-color: yellow;
+	overflow: hidden;
 	/*height: 65%;*/
 }
 
@@ -60,6 +61,7 @@ footer.footer-info{
 body{
 	/*background-color: blue;*/
 	/*position: relative;*/
+	/*overflow: hidden;*/
 }
 
 
@@ -77,33 +79,31 @@ header.side-nav{
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	/*overflow: hidden;*/
 }
 
-header.side-nav a.logo-150px{
+a.logo-150px{
 	display: block;
 	background-color: rgba(9, 9, 9, .3);
 	width: 150px;
 	height: 150px;
 	position: absolute;
-	bottom: -15%;
-	margin-left: 34%;
-	margin-right: 34%;
+	bottom: -150px;
 }
 
-header.side-nav nav{
+#nav{
+	/*overflow: hidden;*/
 	/*background-color: red;*/
 	position: absolute;
 	bottom: -90%;
-	margin-left: 30%;
-	margin-right: 30%;
 }
 
-header.side-nav nav li{
+ul.nav-list > li{
 	width: 200px;
-	margin: 2% 0 2% 0;
+	margin: 2% 0;
 }
 
-header.side-nav nav ul.nav-list li a{
+ul.nav-list > li > a{
 	background-color: rgba(9, 9, 9, .1);
 	text-decoration: none;
 	padding-top: 2%;
@@ -120,13 +120,12 @@ header.side-nav nav ul.nav-list li a{
 
 /* ------------------- main content ------------------- */
 main.main-info{
+	background-color: green;
 	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	padding-top: 15%;
-	padding-bottom: 25%;
-	background-color: white;
-	overflow: hidden;
+	margin: 85px auto 0px auto;
+	padding: 15% auto 25% auto;
+	/*background-color: white;*/
+	/*overflow: hidden;*/
 }
 
 main.main-info *{

@@ -13,6 +13,7 @@ window.onload = function(){
 		// alert(main_info_height);
 		logo_img[0].style.margin = "0px " + ((w - 150) / 2) + "px";
 		// logo_img[0].style.bottom = -75 + "px";
-		nav.style.margin = main_info_height + "px " + ((w - 200) / 2) + "px " + "0px " + ((w - 200) / 2) + "px";
+		nav.style.margin = "0px " + ((w - 200) / 2) + "px";
+		nav.style.bottom = -(main_info_height) + "px";
 	}
 }

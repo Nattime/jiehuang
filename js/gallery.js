@@ -1,62 +1,115 @@
-var isClicked = false;
-var left_column = document.getElementsByClassName("left-column");
-var right_column = document.getElementsByClassName("right-column");
-var hidden_menu = document.getElementsByClassName("hidden-item");
-var menu_icon = document.getElementsByClassName("menu-icon");
-var list_icon = document.getElementsByClassName("list-icon");
-var menu_item_container = document.getElementsByClassName("menu-item-container");
-var list_item_container = document.getElementsByClassName("list-item-container");
 
+window.onload = function(){
+	// modal image popup
+	var images = document.getElementsByClassName("img");
+	var modal = document.getElementById("modal");
+	var modalImg = document.getElementById("modal-img");
+	var close = document.getElementById("close");
 
-function openMenu(){
-	if(isClicked === false){
-		menu_item_container[0].style.width = "90%";
-		menu_item_container[0].style.marginLeft = "5%";
-		menu_item_container[0].style.marginRight = "5%";
-		menu_item_container[0].style.transition = "all .5s linear";
-		left_column[0].style.width = "15%";
-		left_column[0].style.transition = "all .5s";
-		right_column[0].style.width = "85%";
-		right_column[0].style.transition = "all .5s";
-		menu_icon[0].src = "./img/icons/cross-mark-on-a-black-circle-background.png";
-		menu_icon[0].style.width = "30%";
-		menu_icon[0].style.transition = "all .2s ease-in-out";
-
-		for(i = 0; i < list_item_container.length; ++i){
-			list_item_container[i].style.width = "80%";
-			list_item_container[i].style.marginLeft = "10%";
-			list_item_container[i].style.marginRight = "10%";
-			list_icon[i].style.width = "30%";
-			list_item_container[i].style.transition = "all .2s ease";
-			list_icon[i].style.transition = "all .2s ease";
-		}
-
-		for(i = 0; i < hidden_menu.length; ++i){
-			hidden_menu[i].style.display = "block";
-			hidden_menu[i].style.transition = "all .8s linear";
-		}
-
-		isClicked = true;
-	}else{
-		menu_item_container[0].style.width = "70%";
-		menu_item_container[0].style.marginLeft = "15%";
-		menu_item_container[0].style.marginRight = "15%";
-		left_column[0].style.width = "5%";
-		right_column[0].style.width = "95%";
-		menu_icon[0].src = "./img/icons/menu-1.png";
-		menu_icon[0].style.width = "100%";
-
-		for(i = 0; i < hidden_menu.length; ++i){
-			hidden_menu[i].style.display = "none";
-		}
-
-		for(i = 0; i < list_item_container.length; ++i){
-			list_item_container[i].style.width = "50%";
-			list_item_container[i].style.marginLeft = "25%";
-			list_item_container[i].style.marginRight = "25%";
-			list_icon[i].style.width = "100%";
-		}
-
-		isClicked = false;
+	for(i = 0; i < images.length; i++){
+		images[i].addEventListener('click', function(e){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+		});
 	}
+
+	close.addEventListener('click', function(e){
+		modal.style.display = "none";
+	});
+
+
+
+	// adjust size and icon images
+	var isClicked = false;
+	var left_column = document.getElementsByClassName("left-column");
+	var right_column = document.getElementsByClassName("right-column");
+	var hidden_menu = document.getElementsByClassName("hidden-item");
+	var menu_icon = document.getElementsByClassName("menu-icon");
+	var list_icon = document.getElementsByClassName("list-icon");
+	var item_description = document.getElementsByClassName("item-description");
+	var menu_item_container = document.getElementsByClassName("menu-item-container");
+	var list_item_container = document.getElementsByClassName("list-item-container");
+
+	var height;
+	var container_height;
+
+	menu_icon[0].addEventListener('click', function(e){
+		if(isClicked === false){
+			// height = list_icon[0].scrollHeight;
+			container_height = list_item_container[0].scrollHeight;
+
+			// change the width of the 2 columns
+			left_column[0].style.width = "15vw";
+			right_column[0].style.width = "85vw";
+			left_column[0].style.transition = "all .5s";
+			right_column[0].style.transition = "all .5s";
+
+			menu_item_container[0].style.width = "13vw";
+			menu_item_container[0].style.margin = "20% auto 10% auto";
+			menu_item_container[0].style.transition = "all .1s";
+
+			menu_icon[0].classList.remove("glyphicon-menu-hamburger");
+			menu_icon[0].classList.remove("glyphicon");
+			menu_icon[0].classList.add("fa-remove");
+			menu_icon[0].classList.add("fa");
+			menu_icon[0].style.fontSize = "4vw";
+			menu_icon[0].style.transition = "all .1s";
+
+
+			for(i = 0; i < hidden_menu.length; ++i){
+				hidden_menu[i].style.display = "inline";
+				hidden_menu[i].style.transition = "all .8s linear";
+			}
+
+			// alert(height);
+
+			for(i = 0; i < list_item_container.length; ++i){
+				list_item_container[i].style.width = "12vw";
+				list_item_container[i].style.margin = "4% auto";
+				list_item_container[i].style.transition = "all .2s ease";
+
+				list_icon[i].style.fontSize = "3vw";
+
+				// item_description[i].style.height = (height * .05) + "vw";
+				// item_description[i].style.fontSize = (height) + "px";
+				// item_description[i].style.padding = (height * .22) + "px 0px";
+			}
+
+			// alert(list_item_container[0].height);
+			// alert(list_item_container[0].offsetHeight);
+
+			isClicked = true;
+		}else{
+			// change the width of the columns back to original status
+			left_column[0].style.width = "5vw";
+			right_column[0].style.width = "95vw";
+
+			menu_item_container[0].style.width = "3.5vw";
+			menu_item_container[0].style.margin = "30% auto 0% auto";
+
+			menu_icon[0].classList.remove("fa-remove");
+			menu_icon[0].classList.remove("fa");
+			menu_icon[0].classList.add("glyphicon-menu-hamburger");
+			menu_icon[0].classList.add("glyphicon");
+			menu_icon[0].style.fontSize = "3.5vw";
+
+
+
+
+
+
+			for(i = 0; i < hidden_menu.length; ++i){
+				hidden_menu[i].style.display = "none";
+			}
+
+			for(i = 0; i < list_item_container.length; ++i){
+				list_item_container[i].style.width = "2.5vw";
+				list_item_container[i].style.margin = "10% auto";
+
+				list_icon[i].style.fontSize = "2.3vw";
+			}
+
+			isClicked = false;
+		}
+	});
 }

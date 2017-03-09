@@ -63,80 +63,11 @@ body{
 
 
 
-/* ------------------ side panels ------------------ */
-aside.side-nav{
-	background-color: rgba(12, 12, 12, .3);
-	margin-top: 5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 10%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
-
-aside nav{
-	width: 100%;
-	margin-top: 10%;
-}
-
-aside.side-nav a{
-	width: 95%;
-	margin: auto;
-	background-color: rgba(1, 1, 1, .05);
-	transition: background-color .3s;
-	/*background-color: yellow;*/
-}
-
-aside.side-nav a:hover{
-	background-color: rgba(12, 12, 12, .5);
-	/*background-color: yellow;*/
-}
-
-aside.side-nav a img{
-	/*background-color: green;*/
-	width: 100%;
-	height: auto;
-	opacity: .7;
-	transition: opacity .3s;
-}
-
-aside.side-nav a img:hover{
-	opacity: .9;
-}
-
-aside nav ul.nav-list li{
-	list-style: none;
-	width: 100%;
-}
-
-ul.nav-list li a{
-	background-color: rgba(12, 12, 12, .1);
-	text-decoration: none;
-	font-size: 1.6em;
-	text-align: center;
-	display: block;
-	color: white;
-	width: 100%;
-	height: auto;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	transition: color .5s, background-color .5s;
-}
-
-ul.nav-list li a:hover{
-	background-color: rgba(12, 12, 12, .5);
-	color: green;
-	width: 100%;
-}
-
-
-
-
 
 
 /* ------------------ header in main ------------------ */
 header.header-info{
-	background-color: red;
+	/*background-color: red;*/
 	width: 100%;
 	margin-bottom: 2%;
 	/*overflow: hidden;*/
@@ -158,13 +89,13 @@ header.header-info > a:hover{
 	/*background-color: yellow;*/
 }
 
-header.header-info a img{
+header.header-info > a > img{
 	width: 100%;
 	height: auto;
 	/*background-color: green;*/
 }
 
-header.header-info div.user-info{
+div.user-info{
 	/*background-color: green;*/
 	margin: 9% 5% 0% 5%;
 	width: 70%;
@@ -173,7 +104,7 @@ header.header-info div.user-info{
 	/*overflow: hidden;*/
 }
 
-div.user-info h2.name{
+h2.name{
 	/*background-color: purple;*/
 	font-size: 4.5vw;
 	font-family: Arial;
@@ -182,21 +113,22 @@ div.user-info h2.name{
 	margin-bottom: 1%;
 }
 
-div.user-info ul.email-phone-info{
-	/*background-color: yellow;*/
+ul.email-phone-info{
+	/*background-color: red;*/
 	overflow: hidden;
 	width: 100%;
 }
 
-div.user-info ul.email-phone-info li{
-	/*background-color: white;*/
-	width: 33.33%;
-	float: left;
-	text-align: right;
+ul.email-phone-info > li{
+	/*background-color: red;*/
+	width: auto;
+	padding: 0% 0% 0% 3%;
+	float: right;
+	text-align: center;
 	font-size: 1.2vw;
 }
 
-ul.email-phone-info li a{
+ul.email-phone-info > li > a{
 	text-decoration: none;
 }
 

@@ -7,6 +7,7 @@
 html, body{
 	width: 100vw;
 	height: 100vh;
+	position: relative;
 }
 
 .left-column, .main-column, .footer-info{
@@ -60,8 +61,8 @@ footer.footer-info{
 /* ------------------- background ------------------- */
 body{
 	/*background-color: blue;*/
-	position: relative;
-	overflow: hidden;
+	/*position: relative;*/
+	/*overflow: hidden;*/
 }
 
 

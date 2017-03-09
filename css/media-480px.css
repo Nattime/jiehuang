@@ -42,7 +42,7 @@ html{
 }
 
 .main-column{
-	background-color: yellow;
+	/*background-color: yellow;*/
 	overflow: hidden;
 	/*height: 65%;*/
 }
@@ -120,9 +120,9 @@ ul.nav-list > li > a{
 
 /* ------------------- main content ------------------- */
 main.main-info{
-	background-color: green;
+	/*background-color: green;*/
 	width: 80%;
-	margin: 85px auto 0px auto;
+	margin: 55px auto 0px auto;
 	padding: 15% auto 25% auto;
 	/*background-color: white;*/
 	/*overflow: hidden;*/
@@ -162,8 +162,8 @@ main.main-info ul.description-list li{
 
 /* ------------------ footer info ------------------ */
 footer.footer-info{
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;*/
+	/*bottom: 0;*/
 	width: 100%;
 	background-color: rgba(12, 12, 12, .25);
 }

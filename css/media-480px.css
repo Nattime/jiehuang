@@ -162,8 +162,8 @@ main.main-info ul.description-list li{
 
 /* ------------------ footer info ------------------ */
 footer.footer-info{
-	/*position: absolute;*/
-	/*bottom: 0;*/
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	background-color: rgba(12, 12, 12, .25);
 }

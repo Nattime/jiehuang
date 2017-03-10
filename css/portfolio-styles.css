@@ -26,7 +26,7 @@ section{
 	width: 100vw;
 	max-width: none;
 	height: 99vh;
-	margin-bottom: 1%;
+	/*margin-bottom: 1%;*/
 	overflow: hidden;
 }
 
@@ -36,10 +36,12 @@ section{
 
 #main > section:nth-child(odd){
 	background-color: #89f1ff;
+	box-shadow: 0px 0px 20px 5px #00aac1 inset;
 }
 
 #main > section:nth-child(even){
 	background-color: #00aac1;
+
 	/*display: table;*/
 }
 

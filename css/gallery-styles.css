@@ -47,6 +47,11 @@ html{
 /* ------------------ columns ------------------ */
 .left-column{
 	background-color: #404040;
+	background: #1f2731; /* Old browsers */
+	background: -moz-linear-gradient(left,  #1f2731 0%, #27343f 24%, #27343f 24%, #27343f 31%, #27343f 31%, #2c3a46 36%, #3d5161 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #1f2731 0%,#27343f 24%,#27343f 24%,#27343f 31%,#27343f 31%,#2c3a46 36%,#3d5161 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #1f2731 0%,#27343f 24%,#27343f 24%,#27343f 31%,#27343f 31%,#2c3a46 36%,#3d5161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2731', endColorstr='#3d5161',GradientType=1 ); /* IE6-9 */
 	width: 5vw;
 	float: left;
 }
@@ -149,6 +154,7 @@ section.row-container{
 	width: 25%;
 	margin: .5% 0%;
 	opacity: 1;
+	cursor: pointer;
 }
 
 section.row-container:nth-of-type(1) > .img{
@@ -157,6 +163,7 @@ section.row-container:nth-of-type(1) > .img{
 
 section.row-container:nth-of-type(1) > .img:hover{
 	margin: 0% 0%;
+	cursor: pointer;
 }
 
 

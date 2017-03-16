@@ -74,17 +74,19 @@ html{
 	/*overflow: hidden;*/
 }
 
-.menu-item-container:hover{
-	/*background-color: white;*/
-	background-color: rgba(255, 255, 255, .5);
-}
-
 .menu-icon{
 	/*background-color: green;*/
 	color: white;
 	font-size: 3.5vw;
 	cursor: pointer;
 	text-align: justify;
+	transition: color .9s;
+}
+
+.menu-icon:hover{
+	/*background-color: white;*/
+	/*background-color: rgba(255, 255, 255, .5);*/
+	color: red;
 }
 
 .hidden-item{
@@ -107,7 +109,8 @@ html{
 
 .list-item-container:hover{
 	/*background-color: white;*/
-	background-color: rgba(255, 255, 255, .5);
+	/*background-color: rgba(255, 255, 255, .5);*/
+	/*color: red;*/
 }
 
 .list-item-container > a{
@@ -118,6 +121,11 @@ html{
 	/*background-color: green;*/
 	color: white;
 	font-size: 2.3vw;
+	transition: color .9s;
+}
+
+.list-icon:hover{
+	color: red;
 }
 
 .item-description{
@@ -140,7 +148,7 @@ section.row-container{
 	/*border-bottom: 1px solid black;*/
 }
 
-.img{
+.img, .portrait-img{
 	margin: .5% .5%;
 	width: 24%;
 	opacity: .5;
@@ -150,18 +158,18 @@ section.row-container{
 	transition: all .6s;
 }
 
-.img:hover{
+.img:hover, .portrait-img:hover{
 	width: 25%;
 	margin: .5% 0%;
 	opacity: 1;
 	cursor: pointer;
 }
 
-section.row-container:nth-of-type(1) > .img{
+section.row-container:nth-of-type(1) > .img, section.row-container:nth-of-type(1) > .portrait-img{
 	margin: 0% .5%;
 }
 
-section.row-container:nth-of-type(1) > .img:hover{
+section.row-container:nth-of-type(1) > .img:hover, section.row-container:nth-of-type(1) > .portrait-img:hover{
 	margin: 0% 0%;
 	cursor: pointer;
 }

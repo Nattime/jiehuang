@@ -2,6 +2,7 @@
 window.onload = function(){
 	// modal image popup
 	var images = document.getElementsByClassName("img");
+	var portraitImg = document.getElementsByClassName("portrait-img");
 	var modal = document.getElementById("modal");
 	var modalImg = document.getElementById("modal-img");
 	var close = document.getElementById("close");
@@ -13,8 +14,19 @@ window.onload = function(){
 		});
 	}
 
+	for(i = 0; i < portraitImg.length; i++){
+		portraitImg[i].addEventListener('click', function(e){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			modalImg.style.height = "80%";
+			modalImg.style.width = "auto";
+		});
+	}
+
 	close.addEventListener('click', function(e){
 		modal.style.display = "none";
+		modalImg.style.width = "60%";
+		modalImg.style.height = "auto";
 	});
 
 
@@ -53,12 +65,12 @@ window.onload = function(){
 			menu_icon[0].classList.add("fa-remove");
 			menu_icon[0].classList.add("fa");
 			menu_icon[0].style.fontSize = "4vw";
-			menu_icon[0].style.transition = "all .1s";
+			// menu_icon[0].style.transition = "all .1s";
 
 
 			for(i = 0; i < hidden_menu.length; ++i){
 				hidden_menu[i].style.display = "inline";
-				hidden_menu[i].style.transition = "all .8s linear";
+				hidden_menu[i].style.transition = "display .8s linear";
 			}
 
 			// alert(height);

@@ -10,8 +10,7 @@ window.onload = function(){
 	for(i = 0; i < images.length; i++){
 		images[i].addEventListener('click', function(e){
 			modal.style.display = "block";
-			var srcString = this.src.replace("-600px", "");
-			modalImg.src = srcString;
+			modalImg.src = this.src.replace("-600px", "");
 		});
 	}
 

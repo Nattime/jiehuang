@@ -10,14 +10,18 @@ window.onload = function(){
 	for(i = 0; i < images.length; i++){
 		images[i].addEventListener('click', function(e){
 			modal.style.display = "block";
-			modalImg.src = this.src.replace("-600px", "");
+			var imgSrc = this.src.replace("mdpx", "xdpx");
+			imgSrc = imgSrc.replace("600mdpx", "1440xdpx");
+			modalImg.src = imgSrc;
 		});
 	}
 
 	for(i = 0; i < portraitImg.length; i++){
 		portraitImg[i].addEventListener('click', function(e){
 			modal.style.display = "block";
-			modalImg.src = this.src;
+			var imgSrc = this.src.replace("mdpx", "xdpx");
+			imgSrc = imgSrc.replace("600mdpx", "1440xdpx");
+			modalImg.src = imgSrc;
 			modalImg.style.height = "80%";
 			modalImg.style.width = "auto";
 		});

@@ -1,3 +1,14 @@
+/*
+	------------------- color scheme --------------------
+
+	red: #b80f0c, rgb(184, 15, 12), rgba(184, 15, 12, 1)
+	cyan: #0cb5b8, rgb(12, 181, 184), rgba(12, 181, 184, 1)
+
+	logo background: background-color: rgba(12, 12, 12, .3)
+	layover color: rgba(0, 0, 0, .7)
+*/
+
+
 /* ------------------- general css ------------------- */
 *{
 	display: block;
@@ -33,11 +44,7 @@ html{
 
 /* ------------------ background ------------------ */
 /*body{
-	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .25)), url("../img/landscape-img-1200x687-bw.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }*/
 
 
@@ -46,12 +53,7 @@ html{
 
 /* ------------------ columns ------------------ */
 .left-column{
-	background-color: #404040;
-	background: #1f2731; /* Old browsers */
-	background: -moz-linear-gradient(left,  #1f2731 0%, #27343f 24%, #27343f 24%, #27343f 31%, #27343f 31%, #2c3a46 36%, #3d5161 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  #1f2731 0%,#27343f 24%,#27343f 24%,#27343f 31%,#27343f 31%,#2c3a46 36%,#3d5161 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  #1f2731 0%,#27343f 24%,#27343f 24%,#27343f 31%,#27343f 31%,#2c3a46 36%,#3d5161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2731', endColorstr='#3d5161',GradientType=1 ); /* IE6-9 */
+	background-color: rgba(0, 0, 0, .9);
 	width: 5vw;
 	float: left;
 }
@@ -86,7 +88,7 @@ html{
 .menu-icon:hover{
 	/*background-color: white;*/
 	/*background-color: rgba(255, 255, 255, .5);*/
-	color: red;
+	color: rgba(184, 15, 12, 1);
 }
 
 .hidden-item{
@@ -125,7 +127,7 @@ html{
 }
 
 .list-icon:hover{
-	color: red;
+	color: rgba(184, 15, 12, 1);
 }
 
 .item-description{
@@ -141,7 +143,7 @@ html{
 
 /* ------------------ main contents ------------------ */
 section.row-container{
-	background-color: #B0B0B0;
+	background-color: rgba(0, 0, 0, .7);
 	width: 100%;
 	overflow: hidden;
 	height: 33.33vh;
@@ -203,7 +205,7 @@ section.row-container:nth-of-type(1) > .img:hover, section.row-container:nth-of-
 }
 
 #close:hover{
-	background-color: red;
+	background-color: rgba(184, 15, 12, 1);
 }
 
 

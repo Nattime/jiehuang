@@ -1,3 +1,14 @@
+/*
+	------------------- color scheme --------------------
+
+	red: #b80f0c, rgb(184, 15, 12), rgba(184, 15, 12, 1)
+	cyan: #0cb5b8, rgb(12, 181, 184), rgba(12, 181, 184, 1)
+
+	logo background: background-color: rgba(12, 12, 12, .3)
+	layover color: rgba(0, 0, 0, .7)
+*/
+
+
 /* ------------------- general css ------------------- */
 title{
 	display: none;
@@ -34,29 +45,10 @@ hr{
 
 
 
-/* ------------------ columns ------------------ */
-.left-col, .main-col{
-	height: auto;
-}
-
-/*.left-col{
-	float: left;
-	width: 20%;
-	background-color: blue;
-}*/
-
-.main-col{
-	width: 70%;
-	margin: auto;
-	/*background-color: green;*/
-}
-
-
-
 
 /* ------------------ background ------------------ */
 body{
-	background-color: white;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -67,72 +59,105 @@ body{
 
 /* ------------------ header in main ------------------ */
 header.header-info{
-	/*background-color: red;*/
-	width: 100%;
-	margin-bottom: 2%;
-	/*overflow: hidden;*/
-}
-
-header.header-info > a{
-	width: 15%;
-	margin-top: 5%;
-	margin-left: 5%;
-	background-color: rgba(1, 1, 1, .05);
-	transition: color .5s, background-color .5s;
-	display: block;
-	float: left;
-	/*background-color: yellow;*/
-}
-
-header.header-info > a:hover{
-	background-color: rgba(12, 12, 12, .5);
-	/*background-color: yellow;*/
-}
-
-header.header-info > a > img{
+	/*background-color: blue;*/
 	width: 100%;
 	height: auto;
-	/*background-color: green;*/
+	margin-bottom: 2%;
+	overflow: hidden;
 }
 
-div.user-info{
+.header-info-left-col{
 	/*background-color: green;*/
-	margin: 9% 5% 0% 5%;
-	width: 70%;
-	height: 5vw;
+	width: 25%;
+	height: 100%;
 	float: left;
-	/*overflow: hidden;*/
+}
+
+.header-info-left-col > a{
+	background-color: rgba(1, 1, 1, .05);
+	width: 80%;
+	margin: 5% auto 5% auto;
+	transition: color .5s, background-color .5s;
+}
+
+.header-info-left-col > a:hover{
+	background-color: rgba(12, 12, 12, .5);
+}
+
+.header-info-left-col > a > img{
+	width: 100%;
+	height: auto;
+}
+
+.header-info-right-col{
+	/*background-color: yellow;*/
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+
+.header-info-right-col > hr{
+	width: 55%;
+	margin: auto 10px auto auto;
+	border: solid red;
+	border-radius: 0px 25px 0px 100px;
 }
 
 h2.name{
-	/*background-color: purple;*/
 	font-size: 4.5vw;
 	font-family: Arial;
-	width: 100%;
+	font-style: oblique;
+	color: rgba(184, 15, 12, 1);
+	width: 95%;
+	height: 100%;
 	text-align: right;
-	margin-bottom: 1%;
+	padding-right: 5%;
+	padding-top: 5%;
 }
 
-ul.email-phone-info{
-	/*background-color: red;*/
-	overflow: hidden;
+ul.contact-info{
+	/*background-color: green;*/
 	width: 100%;
+	margin: 10px auto;
+	overflow: hidden;
 }
 
-ul.email-phone-info > li{
+ul.contact-info > li{
 	/*background-color: red;*/
 	width: auto;
-	padding: 0% 0% 0% 3%;
+	padding-right: 10px;
 	float: right;
-	text-align: center;
-	font-size: 1.2vw;
+	text-align: right;
+	font-size: 16px;
 }
 
-ul.email-phone-info > li > a{
+ul.contact-info > li > a{
 	text-decoration: none;
 }
 
-/*main div.up-arrow-hr{
+ul.social-media-info{
+	/*background-color: blue;*/
+	width: 100%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+ul.social-media-info > li{
+	width: auto;
+	padding-right: 10px;
+	float: right;
+	text-align: right;
+	font-size: 16px;
+}
+
+ul.social-media-info > li > a{
+	text-decoration: none;
+}
+
+
+
+
+/*div.up-arrow-hr{
 	height: 20px;
 	width: 100%;
 	background-color: green;
@@ -158,31 +183,29 @@ hr.unique-hr{
 
 
 /* ------------------ main contents ------------------ */
-main.resume{
+.main-col{
 	/*background-color: rgba(12, 12, 12, .2);*/
 	width: 100%;
-	margin-top: 2%;
+	max-width: 960px;
+	margin: 1% auto;
 	box-shadow: -5px -1px 30px #000;
-	/*background-color: blue;*/
 }
 
-main.resume section{
+section{
 	width: 100%;
 	height: auto;
-	/*background-color: yellow;*/
 	margin-top: 2%;
 	margin-bottom: 2%;
 	padding-bottom: 2%;
 	overflow: hidden;
 }
 
-section h2{
+section > h2{
 	font-size: 2em;
 	font-family: Tahoma;
 	padding-left: 5%;
 	width: 95%;
 	color: red;
-	/*background-color: gray;*/
 }
 
 section h3{
@@ -190,10 +213,9 @@ section h3{
 	width: 90%;
 	padding-left: 10%;
 	margin-top: 1%;
-	/*background-color: pink;*/
 }
 
-main.resume section > p{
+section > p{
 	font-family: Times;
 	width: 78%;
 	padding: 2%;
@@ -213,7 +235,6 @@ section > h2+ul > li > p > span.indent{
 	text-indent: 2%;
 }
 
-
 section h2+ul li:first-of-type{
 	border-radius: 0 20px 0 0;
 }
@@ -228,7 +249,6 @@ section h2+ul li:only-child{
 
 section ul{
 	width: 80%;
-	/*background-color: brown;*/
 	font-family: Times;
 	background-color: rgba(12, 12, 12, .2);
 	margin: auto;
@@ -242,7 +262,6 @@ h3+ul{
 
 section ul li{
 	background-color: rgba(12, 12, 12, .2);
-	/*background-color: green;*/
 	overflow: hidden;
 	text-align: justify;
 	padding: 2%;
@@ -262,26 +281,22 @@ section.skills li{
 section.skills ul li:nth-of-type(even){
 	float: right;
 	background-color: rgba(12, 12, 12, .2);
-	/*background-color: green;*/
 }
 
 section.skills ul li:nth-of-type(odd){
 	float: left;
 	background-color: rgba(12, 12, 12, .2);
-	/*background-color: pink;*/
 	text-align: center;
 }
 
 div.left-section-col{
 	float: left;
 	width: 50%;
-	/*background-color: red;*/
 }
 
 div.right-section-col{
 	float: right;
 	width: 50%;
-	/*background-color: black;*/
 }
 
 .projects-portfolio li{

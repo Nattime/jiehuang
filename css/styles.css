@@ -1,8 +1,13 @@
-/* ------------------- color scheme -------------------- */
 /*
+	------------------- color scheme --------------------
+
 	red: #b80f0c, rgb(184, 15, 12), rgba(184, 15, 12, 1)
 	cyan: #0cb5b8, rgb(12, 181, 184), rgba(12, 181, 184, 1)
+
+	logo background: background-color: rgba(12, 12, 12, .3)
+	layover color: rgba(0, 0, 0, .7)
 */
+
 
 /* ------------------- general css ------------------- */
 *{
@@ -176,7 +181,7 @@ h2.name{
 }
 
 ul.description-list{
-	border-top: .1em dashed red;
+	border-top: .1em dashed rgba(184, 15, 12, 1);
 	width: 100%;
 	overflow: hidden;
 }
